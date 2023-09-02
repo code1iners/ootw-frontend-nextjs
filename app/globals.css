@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -14,7 +14,7 @@
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
-}
+} */
 
 body {
   color: rgb(var(--foreground-rgb));
@@ -24,4 +24,33 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+@layer components {
+  .hamburger {
+  }
+
+  .hamburger:hover .bar {
+    @apply bg-red-500;
+  }
+
+  .input {
+    @apply border border-black p-2 rounded-md text-sm tracking-wider;
+  }
+}
+
+body > .menu {
+  width: 100vw;
+  height: calc(100vh - 65px);
+  position: fixed;
+  top: calc(65px);
+  left: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body > .menu > ul {
+  width: 100vw;
+  height: calc(100vh - 65px);
 }
