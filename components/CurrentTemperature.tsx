@@ -5,7 +5,7 @@ import React from "react";
 
 const CurrentTemperature = () => {
   return (
-    <article className="home-padding grid grid-cols-3">
+    <article className="core-padding grid grid-cols-3">
       <section className="col-start-1 col-end-2 flex justify-center items-center">
         <Image
           src="/icons/weather/sunny.png"

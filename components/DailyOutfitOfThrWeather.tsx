@@ -4,7 +4,7 @@ import React from "react";
 
 const DailyOutfitOfThrWeather = () => {
   return (
-    <article className="home-padding flex flex-col gap-5">
+    <article className="core-padding page__container">
       <div className="flex items-center justify-between">
         <h2 className="text-3xl font-light">오늘의 OOTW</h2>
         <Link className="hover:animate-spin" href={Routes.CLOSET}>

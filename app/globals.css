@@ -44,12 +44,16 @@ body {
     @apply border border-black p-2 rounded-md text-sm tracking-wider;
   }
 
-  .home-padding {
+  .core-padding {
     @apply p-10;
   }
 
   .menu-item {
     @apply flex items-center gap-5 text-2xl tracking-wider font-extralight hover:underline;
+  }
+
+  .page__container {
+    @apply flex flex-col gap-5;
   }
 }
 
