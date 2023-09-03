@@ -2,13 +2,13 @@ import { clazz } from "@ce1pers/use-class";
 import React from "react";
 
 interface Props {
-  text: string;
+  children: React.ReactNode;
   onClick?: () => void;
   className?: string;
   type?: "submit" | "reset" | "button";
 }
 
-const HorizontalButton = ({ className, text, type, onClick }: Props) => {
+const HorizontalButton = ({ className, children, type, onClick }: Props) => {
   return (
     <button
       className={clazz(
@@ -18,7 +18,7 @@ const HorizontalButton = ({ className, text, type, onClick }: Props) => {
       type={type}
       onClick={onClick}
     >
-      {text}
+      {children}
     </button>
   );
 };

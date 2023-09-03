@@ -92,7 +92,7 @@ const Join = () => {
           placeholder="전화번호를 입력하세요"
           error={errors.phoneNumber?.message}
         />
-        <HorizontalButton text="회원가입" />
+        <HorizontalButton>회원가입</HorizontalButton>
       </form>
 
       <section className="mt-5">

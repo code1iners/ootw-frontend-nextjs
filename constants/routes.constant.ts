@@ -5,4 +5,5 @@ export const Routes = {
   LOGIN: "/login",
   JOIN: "/join",
   LOGOUT: "/logout",
+  CLOSET: "/closet",
 };

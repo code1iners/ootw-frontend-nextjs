@@ -15,11 +15,10 @@ const Logout = () => {
 
     router.push(Routes.LOGIN);
   }, []);
+
   return (
     <UserGuard>
-      <section className="">
-        <h2>Logout</h2>
-      </section>
+      <></>
     </UserGuard>
   );
 };

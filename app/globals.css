@@ -16,6 +16,12 @@
   }
 } */
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -36,6 +42,14 @@ body {
 
   .input {
     @apply border border-black p-2 rounded-md text-sm tracking-wider;
+  }
+
+  .home-padding {
+    @apply p-10;
+  }
+
+  .menu-item {
+    @apply flex items-center gap-5 text-2xl tracking-wider font-extralight hover:underline;
   }
 }
 

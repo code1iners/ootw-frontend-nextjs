@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 
 import { useAuthStore } from "@/store";
@@ -11,15 +11,16 @@ interface Props {
 }
 
 const UserGuard = ({ children }: Props) => {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
   const router = useRouter();
   const { user } = useAuthStore();
 
   useEffect(() => {
-    console.log(user);
     if (!user) router.push(Routes.LOGIN);
+    setIsLoggedIn(!!user);
   }, []);
 
-  if (!user) return null;
+  if (!isLoggedIn) return null;
 
   return <>{children}</>;
 };
