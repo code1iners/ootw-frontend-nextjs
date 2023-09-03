@@ -30,9 +30,9 @@ const DailyOutfitOfThrWeather = () => {
         </Link>
       </div>
       <ul className="pl-5 space-y-2">
-        <li className="list-disc font-light text-sm">1</li>
-        <li className="list-disc font-light text-sm">2</li>
-        <li className="list-disc font-light text-sm">3</li>
+        <li className="list-disc text-sm tracking-widest">얇은 반팔</li>
+        <li className="list-disc text-sm tracking-widest">반바지</li>
+        <li className="list-disc text-sm tracking-widest">손풍기</li>
       </ul>
     </article>
   );
